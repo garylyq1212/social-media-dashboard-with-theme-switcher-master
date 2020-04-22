@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: calc(0.2vw + 1.6rem);
+  background-color: $white-bg;
+  color: $dark-blue-text;
+
+  p {
+    color: $grayish-blue-text;
+    font-weight: 700;
+  }
+
+  .card {
+    background-color: $card-bg-light-grayish;
+  }
+
+  .round {
+    background: $white-bg;
+  }
+
+  &.dark {
+    background-color: $dark-blue-bg;
+    color: $white-text;
+
+    p {
+      color: $desaturated-blue-text;
+    }
+
+    .card {
+      background-color: $card-bg-desaturated-blue;
+
+      .green-text {
+        color: $lime-green;
+      }
+
+      .red-text {
+        color: $bright-red;
+      }
+    }
+
+    .round {
+      background: $dark-blue-bg;
+    }
+
+    .attribution {
+      a {
+        color: $desaturated-blue-text;
+      }
+    }
+  }
+}
+
+.main-header {
+  padding-top: 3rem;
+  flex-wrap: wrap;
+
+  &-content {
+    flex: 1 1 40rem;
+    position: relative;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-toggle {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-right: 1.5rem;
+    }
+
+    .toggle,
+    input {
+      display: none;
+    }
+
+    .toggle {
+      cursor: pointer;
+      display: block;
+      width: 6rem;
+      height: 3rem;
+      background: hsl(230, 22%, 74%);
+      border-radius: 1.3rem;
+      transition: background 250ms ease-in;
+      position: relative;
+
+      &.on {
+        background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      }
+
+      .round {
+        position: absolute;
+        top: 0.25rem;
+        right: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        transition: transform 250ms ease-in;
+      }
+    }
+  }
+}
+
+.user-section {
+  margin-top: 4rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+
+  .card {
+    .profile {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    .followers-text {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .facebook-card {
+    @include set-card-border-top-color($facebook-border-top-color);
+  }
+
+  .twitter-card {
+    @include set-card-border-top-color($twitter-border-top-color);
+  }
+
+  .instagram-card {
+    @include set-card-border-top-color($instagram-border-top-color);
+  }
+
+  .youtube-card {
+    @include set-card-border-top-color($youtube-border-top-color);
+  }
+}
+
+.overview-section {
+  margin: 7rem auto;
+
+  &-title {
+    font-size: 3rem;
+  }
+
+  .cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+
+    .card {
+      span {
+        h1 {
+          font-size: 4rem;
+        }
+
+        img {
+          margin-top: 4rem;
+        }
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+footer {
+  .attribution {
+    margin: 3rem auto;
+  }
+}
+
+@import 'utils';
+
+@media (max-width: 710px) {
+  body {
+    .main-header-content {
+      &::after {
+        content: '';
+        display: block;
+        margin: 2rem auto;
+        width: 100%;
+        border-bottom: 0.1rem solid $top-bg-pattern-dark-blue;
+      }
+    }
+
+    &.dark {
+      .main-header-content {
+        &::after {
+          border-bottom: 0.1rem solid $top-bg-pattern-pale-blue;
+        }
+      }
+    }
+  }
+}

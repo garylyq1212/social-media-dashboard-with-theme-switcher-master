@@ -1,0 +1,24 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.green-text {
+  color: $lime-green;
+}
+
+.red-text {
+  color: $bright-red;
+}
+
+.card {
+  font-size: 1.4rem;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+}

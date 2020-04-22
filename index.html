@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/main.js" defer></script>
+
+    <title>Frontend Mentor | Social Media Dashboard Theme Switcher</title>
+  </head>
+  <body>
+    <header class="main-header container flex">
+      <div class="main-header-content">
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers: 23,004</p>
+      </div>
+
+      <div class="main-header-toggle">
+        <p>Dark Mode</p>
+        <label class="toggle">
+          <input id="toggleBtn" type="checkbox" />
+          <span class="round"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="user-section">
+        <div class="card facebook-card">
+          <p class="profile">
+            <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+            @nathanf
+          </p>
+          <h1>1987</h1>
+          <p class="followers-text">Followers</p>
+          <p class="green-text">
+            <img src="./images/icon-up.svg" alt="icon-up" />
+            12 Today
+          </p>
+        </div>
+
+        <div class="card twitter-card">
+          <p class="profile">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+            @nathanf
+          </p>
+          <h1>1044</h1>
+          <p class="followers-text">Followers</p>
+          <p class="green-text">
+            <img src="./images/icon-up.svg" alt="icon-up" />
+            99 Today
+          </p>
+        </div>
+
+        <div class="card instagram-card">
+          <p class="profile">
+            <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+            @realnathanf
+          </p>
+          <h1>11k</h1>
+          <p class="followers-text">Followers</p>
+          <p class="green-text">
+            <img src="./images/icon-up.svg" alt="icon-up" />
+            1099 Today
+          </p>
+        </div>
+
+        <div class="card youtube-card">
+          <p class="profile">
+            <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+            Nathan F.
+          </p>
+          <h1>8239</h1>
+          <p class="followers-text">Subscribers</p>
+          <p class="red-text">
+            <img src="./images/icon-down.svg" alt="icon-down" />
+            144 Today
+          </p>
+        </div>
+      </section>
+
+      <section class="overview-section">
+        <p class="overview-section-title">Overview - Today</p>
+
+        <div class="cards">
+          <div class="card">
+            <p class="flex">
+              Page Views
+              <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+            </p>
+            <span class="flex">
+              <h1>87</h1>
+              <p class="green-text">
+                <img src="./images/icon-up.svg" alt="icon-up" />
+                3%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Likes
+              <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+            </p>
+            <span class="flex">
+              <h1>52</h1>
+              <p class="red-text">
+                <img src="./images/icon-down.svg" alt="icon-down" />
+                2%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Likes
+              <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+            </p>
+            <span class="flex">
+              <h1>5462</h1>
+              <p class="green-text">
+                <img src="./images/icon-up.svg" alt="icon-up" />
+                2257%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Profile Views
+              <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+            </p>
+            <span class="flex">
+              <h1>52k</h1>
+              <p class="green-text">
+                <img src="./images/icon-up.svg" alt="icon-up" />
+                1375%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Retweets
+              <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+            </p>
+            <span class="flex">
+              <h1>117</h1>
+              <p class="green-text">
+                <img src="./images/icon-up.svg" alt="icon-up" />
+                303%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Likes
+              <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+            </p>
+            <span class="flex">
+              <h1>507</h1>
+              <p class="green-text">
+                <img src="./images/icon-up.svg" alt="icon-up" />
+                553%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Likes
+              <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+            </p>
+            <span class="flex">
+              <h1>107</h1>
+              <p class="red-text">
+                <img src="./images/icon-down.svg" alt="icon-down" />
+                19%
+              </p>
+            </span>
+          </div>
+
+          <div class="card">
+            <p class="flex">
+              Total Views
+              <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+            </p>
+            <span class="flex">
+              <h1>1407</h1>
+              <p class="red-text">
+                <img src="./images/icon-down.svg" alt="icon-down" />
+                12%
+              </p>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Gary Quan</a>.
+      </div>
+    </footer>
+  </body>
+</html>
